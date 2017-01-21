@@ -1,3 +1,18 @@
+#' Run a system command
+#'
+#' Run a system command form within R.
+#'
+#' @param cmd Command to run.
+#' @param args Command line arguments.
+#' @param callback ....
+#' @param echo Whether to echo the complete command run by \code{rcmd}.
+#' @return not much ...
+#'
+#' @family SYSTEM commands
+#' @export
+#'
+#' @examples
+#' safe_system("dir", getwd())
 
 safe_system <- function(command, args, callback = NULL, echo = FALSE) {
 
